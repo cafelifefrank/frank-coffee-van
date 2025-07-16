@@ -158,7 +158,6 @@
     </div>
   </div>
 
-  <!-- شبکه‌های اجتماعی -->
   <div class="social">
     <p><strong>📲 Join the adventure — follow me on Instagram & YouTube!</strong></p>
     <a href="https://www.instagram.com/cafelifefrank" target="_blank">📸 Instagram</a>
@@ -172,7 +171,8 @@
     function copy(id) {
       const input = document.getElementById(id);
       navigator.clipboard.writeText(input.value)
-        .then(() => alert("Address copied to clipboard!"));
+        .then(() => alert("Address copied to clipboard!"))
+        .catch(err => alert("Error copying address."));
     }
   </script>
 </body>
